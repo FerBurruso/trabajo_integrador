@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-
-}
-
 .logo_codo_a_codo{
     height: 75px;
 }
@@ -129,16 +125,6 @@ body{
 .boton_enviar{
     width: 100%;
 }
-
-/*
-.pantalla_dividida{
-    height: 80vh!important;
-}
-
-.imagen_honolulu{
-    width: 50%;
-}
-*/
 
 @media (max-width:960px){
    
