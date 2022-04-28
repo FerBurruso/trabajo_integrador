@@ -42,6 +42,7 @@
     position: absolute;
     top: 40%;
     text-align: right;
+    font-size: 1rem;
     color: white;
     z-index: 9;
 }
@@ -183,6 +184,10 @@
      .menu_footer{
         flex-direction: column;
     }  
+
+    .texto_sobre_imagen{
+        font-size: 0.8rem;
+    }
    
 }
 
