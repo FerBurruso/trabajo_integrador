@@ -190,15 +190,3 @@
     }
    
 }
-
-@media (max-width:500px){
-
-    .seccion_derecha .h2{
-        font-size: 0.8rem;
-    }
-    
-    .seccion_derecha{
-        font-size: 0.7rem;
-    }
-
-}
