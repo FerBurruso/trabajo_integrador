@@ -192,12 +192,20 @@
 }
 
 @media (max-width:550px){
+
+    .menu{
+        z-index: 10;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
     .carrusel_principal .carousel-item img {  
-        height: 95vh!important;
+        height: 100vh!important;
       }
       
     .carrusel_principal .carousel-item:before {
         position: absolute;
-        height: 95vh!important;
+        height: 100vh!important;
     }
 }
