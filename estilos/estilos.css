@@ -191,13 +191,13 @@
    
 }
 
-@media (max-width:500px){
+@media (max-width:550px){
     .carrusel_principal .carousel-item img {  
-        height: 100vh!important;
+        height: 80vh!important;
       }
       
     .carrusel_principal .carousel-item:before {
         position: absolute;
-        height: 100vh!important;
+        height: 80vh!important;
     }
 }
