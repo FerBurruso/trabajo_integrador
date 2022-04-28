@@ -193,11 +193,11 @@
 
 @media (max-width:550px){
     .carrusel_principal .carousel-item img {  
-        height: 90vh!important;
+        height: 85vh!important;
       }
       
     .carrusel_principal .carousel-item:before {
         position: absolute;
-        height: 90vh!important;
+        height: 85vh!important;
     }
 }
