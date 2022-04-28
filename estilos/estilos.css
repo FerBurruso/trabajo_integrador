@@ -126,13 +126,38 @@
     width: 100%;
 }
 
-@media (max-width:960px){
+.menu_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-image: linear-gradient(to right,#1d3e51 , #1e5170 100%);
+/*    background-color: #1d3e51;*/
+     padding: 30px;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+
+.menu_footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:1000px){
+   
+     .menu_footer{
+        padding-left: 0;
+        padding-right: 0;
+    } 
+  
+}
+
+@media (max-width:1080px){
    
     .botones_carrusel{
         height: 50px;
         top: 95%;
     }
-  
+
 }
 
 @media (max-width:760px){
@@ -159,5 +184,9 @@
         padding: 10px;
         font-size: 0.9rem;
     }
-  
+
+     .menu_footer{
+        flex-direction: column;
+    }  
+   
 }
