@@ -171,14 +171,14 @@
     }
 
     .seccion_derecha .h2{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .seccion_derecha{
         width: 100%;
         height: 50%;
         padding: 10px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
      .menu_footer{
@@ -191,3 +191,14 @@
    
 }
 
+@media (max-width:500px){
+
+    .seccion_derecha .h2{
+        font-size: 0.8rem;
+    }
+    
+    .seccion_derecha{
+        font-size: 0.7rem;
+    }
+
+}
