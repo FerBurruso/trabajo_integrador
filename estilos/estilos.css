@@ -161,20 +161,23 @@
 
     .pantalla_divida{
         flex-direction: column;
+        height: 100vh;
     }
 
     .seccion_izquierda{
         width: 100%;
+        height: 50%;
     }
 
     .seccion_derecha .h2{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .seccion_derecha{
         width: 100%;
+        height: 50%;
         padding: 10px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
      .menu_footer{
