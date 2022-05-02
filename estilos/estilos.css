@@ -118,6 +118,10 @@
 }
 
 
+.texto_punteado{
+    border-bottom: 2px dotted #000;
+}
+
 .formulario{
     margin-left:20%;
     margin-right:20%;
