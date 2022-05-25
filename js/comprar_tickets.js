@@ -1,8 +1,9 @@
 const valorTicket = 200;
 
-const descuentoEstudiante = 0.80;
-const descuentoTrainee = 0.50;
-const descuentoJunior = 0.15;
+const descuentoEstudiante = 80;
+const descuentoTrainee = 50;
+const descuentoJunior = 15;
+
 
 var nombre = document.getElementById("nombre");
 var apellido = document.getElementById("apellido");
@@ -74,13 +75,13 @@ function calcularPrecio(){
 
     switch (categoria.value) {
         case "1": //estudiante
-            precio = valorTicket * (1 - descuentoEstudiante);
+            precio = valorTicket * (100 - descuentoEstudiante) / 100;
              break;
         case "2"://trainee
-            precio = valorTicket * (1 - descuentoTrainee);
+            precio = valorTicket * (100 - descuentoTrainee) / 100;
             break;
         case "3"://Junior
-            precio = valorTicket * (1 - descuentoJunior);
+            precio = valorTicket * (100 - descuentoJunior) / 100;
             break;
         case "4"://otros
             precio = valorTicket;
