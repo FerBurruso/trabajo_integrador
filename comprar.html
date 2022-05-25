@@ -73,26 +73,62 @@
 
     <!-- fin cards -->
 
-    <!-- inicio formulario 
-    <form class="formulario mb-5">
-        <div class="row mb-5">
+    <div class="container mx-auto texto_oradores" id="conviertete_orador">
+        <h6>VENTA</h6>
+        <h2>VALOR DEL TICKET $200</h2>
+    </div>
+
+    <!-- inicio formulario -->
+    <form class="formulario mb-3">
+
+        <div class="row mb-3">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
             </div>
         </div>
 
-        <div class="mb-3">
-            <textarea class="form-control" id="textoCharla" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
-            <div class="form-text">Recuerda incluir un titulo para tu charla.</div>
+        <div class="row mb-3">
+            <div class="col">
+                <input id="email" type="email" class="form-control" placeholder="Correo" aria-label="Correo">
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary boton_verde boton_enviar">Enviar</button>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+            </div>
+            <div class="col">
+                <label for="categoria" class="form-label">Categoría</label>
+                <select id="categoria" class="form-select" aria-label="Default select example">
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                    <option value="4" selected>Otros</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row texto_pagar">
+            <div class="col alert alert-primary mb-3 mt-2">
+                Total a Pagar: $<span class="" id="span_precio"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <button id="btn_reset" type="reset" class="btn btn-primary boton_verde boton_enviar">Borrar</button>
+            </div>
+            <div class="col">
+                <button id="btn_resumen" type="button" class="btn btn-primary boton_verde boton_enviar">Resumen</button>
+            </div>
+        </div>
+        
       </form>
-     fin formulario -->
-
-    <br><br><br><br><br>
+      <!-- fin formulario -->
 
     <!-- comienzo footer -->
     <footer>
@@ -108,6 +144,8 @@
     </footer>
     <!-- fin footer -->
 
+    <!-- javascript propio -->
+    <script src="js/comprar_tickets.js"></script>
     <!-- javascript bootstrap -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

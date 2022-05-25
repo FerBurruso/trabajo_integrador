@@ -162,6 +162,11 @@
     width: 100%;
 }
 
+.texto_pagar{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
 .menu_footer{
     display: flex;
     justify-content: space-around;
