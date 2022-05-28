@@ -12,11 +12,23 @@ var email = document.getElementById("email");
 var cantidad = document.getElementById("cantidad");
 var categoria = document.getElementById("categoria");
 
+var carta_celeste = document.getElementById("carta_celeste");
+var carta_azul = document.getElementById("carta_azul");
+var carta_amarilla = document.getElementById("carta_amarilla");
+
 function limpiarValidaciones(){
     let arrayControles = document.querySelectorAll(".form-control, .form-select");
     let i;
     for (i = 0; i < arrayControles.length; i++){
         arrayControles[i].classList.remove('is-invalid');
+    }
+}
+
+function limpiarBordes(){
+    let arrayControles = document.querySelectorAll(".carta-item, .card");
+    let i;
+    for (i = 0; i < arrayControles.length; i++){
+        arrayControles[i].classList.remove('borde_remarcado');
     }
 }
 
@@ -95,7 +107,30 @@ function calcularPrecio(){
       return;
 }
 
+function remarcar_cuadro(){
+
+    limpiarBordes();
+
+    switch (categoria.value) {
+
+        case "1": //estudiante
+            carta_azul.classList.add("borde_remarcado");
+            break;
+        case "2"://trainee
+            carta_celeste.classList.add("borde_remarcado");
+            break;
+        case "3"://Junior
+            carta_amarilla.classList.add("borde_remarcado");
+            break;
+        case "4"://otros
+            break;
+        default:
+            break;
+      }
+}
+
 var resumen = document.getElementById("btn_resumen");
 var span_precio = document.getElementById("span_precio");
 
 resumen.addEventListener('click', calcularPrecio);
+categoria.addEventListener('change', remarcar_cuadro);

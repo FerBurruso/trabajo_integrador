@@ -106,6 +106,10 @@
     border-style: solid!important;
 }
 
+.borde_remarcado{
+    border-width: thick!important;
+}
+
 .carta_azul{
     border-color: rgb(0, 68, 255)!important;
 }
