@@ -25,7 +25,7 @@ function limpiarValidaciones(){
 }
 
 function limpiarBordes(){
-    let arrayControles = document.querySelectorAll(".carta-item, .card");
+    let arrayControles = document.querySelectorAll(".card");
     let i;
     for (i = 0; i < arrayControles.length; i++){
         arrayControles[i].classList.remove('borde_remarcado');
